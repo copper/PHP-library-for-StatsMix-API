@@ -511,7 +511,7 @@ abstract class SmResource extends SmBase
  * @package statsmix
  */
 class SmMetric extends SmResource {
-	const base_uri = 'https://api.statsmix.com/api/v2/metrics';
+	const base_uri = 'https://api.statsmix.com/api/v2/metrics.xml';
 	
 	/**
 	 * Fields that are readable from the API
@@ -607,7 +607,7 @@ class SmMetric extends SmResource {
  * @package statsmix
  */
 class SmStat extends SmResource {
-	const base_uri = 'https://api.statsmix.com/api/v2/stats';
+	const base_uri = 'https://api.statsmix.com/api/v2/stats.xml';
 	
 	/**
 	 * Fields that are readable from the API
@@ -747,7 +747,7 @@ class SmStat extends SmResource {
  * @package statsmix
  */
 class SmUser extends SmResource {
-	const base_uri = 'https://api.statsmix.com/api/v2/partners/users';
+	const base_uri = 'https://api.statsmix.com/api/v2/partners/users.xml';
 	
 	
 	public function get_base_uri(){
@@ -815,7 +815,7 @@ class SmUser extends SmResource {
  * Wrapper class for the track endpoint
  */
 class SmTrack extends SmBase{
-	const base_uri = 'https://api.statsmix.com/api/v2/track';
+	const base_uri = 'https://api.statsmix.com/api/v2/track.xml';
 	
 	/**
 	 * @param string $name name of the metric this stat should be attached to 
